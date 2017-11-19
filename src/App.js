@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import Button from './Button';
 import Display from './Display';
+import Settings from './Settings';
+
 import './App.css';
 
 
@@ -34,6 +36,7 @@ class App extends Component {
                     <Display testVal={ this.state.testVal } />
                     <br />
                     <Button setTestVal={ this.setTestVal } />
+                    <Settings />
                 </p>
             </div>
         );
