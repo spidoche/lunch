@@ -4,8 +4,9 @@ class Button extends React.Component {
 
     clickHandler = () => {
 
-        var arr_value = [ 'test01', 'test02', 'test03', 'test04', 'test05', 'test06', 'test07', 'test08', 'test09', 'test10' ];
-        var result    = arr_value[ Math.floor( Math.random() * 10 ) % arr_value.length ];
+        var arr_value = [ '김밥', '볶음밥', '만두국', '칼국수', '샌드위치', '샐러드', '라면', '베트남국수', '돈까스', '제육덮밥' ];
+        var value_food =  Math.floor( Math.random() * 10 ) % arr_value.length;
+        var result = arr_value[value_food];
 
         this.props.setTestVal( result );
 
