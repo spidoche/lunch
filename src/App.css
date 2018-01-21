@@ -1,12 +1,45 @@
-.App {
-  text-align: center;
+.app-wrap{
+    display:flex;
+	align-items : stretch;
+	height:100vh;
+}
+.header-loading{
+    flex: 1 auto;
+    width:300px;
+    background:var(--color-primary);
+	color:#fff;
+	text-align:center;
+	display:flex;
 }
 
-.App-logo {
-  -webkit-animation: App-logo-spin infinite 20s linear;
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.logo {
+    margin: auto;
+    display: block;
 }
+
+.logo > svg,
+.logo > span {
+    display: block;
+    margin: 14px auto;
+}
+
+div#root {
+    width: calc(100% - 300px);
+}
+
+.Suggest-thumb {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: #ddd;
+    border-radius: 50%;
+	border: 6px solid var(--color-primary)
+}
+
+.App {	  
+    text-align: center;
+}
+
 
 .App-header {
   background-color: #222;
@@ -15,20 +48,63 @@
   color: white;
 }
 
+
 .App-title {
   font-size: 1.5em;
 }
 
 .App-intro {
   font-size: large;
+  padding-top: 60px;
 }
 
-@-webkit-keyframes App-logo-spin {
-  from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
-  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+.Suggest-txt {
+    font-size: 36px;
+    color: var(--color-primary);
+    margin: 30px;
 }
 
-@keyframes App-logo-spin {
-  from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
-  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+
+button{
+    width:160px;
+	height: 54px;
+	border:2px solid var(--color-primary);
+	color: var(--color-primary);
+	transition: 300ms;
+	font-size:16px;
+	margin:0 4px;
+	display:inline-block;
+}
+button:hover{
+	background-color: var(--color-primary);
+	color: #fff;
+}
+button:focus{
+	outline:none;
+}
+
+
+@media (max-width :768px){
+
+	.header {
+		display: block;
+		height: 110px;
+		width: 100%;
+		padding-top: 20px;
+	}
+	
+	.app-wrap {
+		display: block;
+		height: auto;
+	}
+	
+	div#root {
+		width: 100%;
+		margin-top: 30px;
+	}
+	
+	.logo > svg {
+		margin-top: 0;
+	}
+
 }

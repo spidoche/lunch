@@ -22,19 +22,24 @@
     <title>오늘 뭐먹지?</title>
   </head>
   <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <div class="app-wrap">
+        <header class="header header-loading">
+            <div class="logo">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="45px" height="50px" viewBox="0 0 45 50" enable-background="new 0 0 45 50" xml:space="preserve">
+                    <path fill="#FFFFFF" d="M39.62,13.63C37.583,6.076,30.644,0.714,22.667,0.714S7.751,6.076,5.713,13.63H1.417v1.507
+                        c0,8.501,5.075,15.845,12.37,19.195v1.937h17.761v-1.937c7.294-3.351,12.369-10.694,12.369-19.195V13.63H39.62L39.62,13.63z
+                        M22.667,3.729c6.322,0,11.854,4.068,13.791,9.902H8.875C10.812,7.796,16.344,3.729,22.667,3.729z M22.667,33.255
+                        c-9.536,0-17.384-7.322-18.156-16.61h36.312C40.05,25.933,32.203,33.255,22.667,33.255z"/>
+                    <path fill="#FFFFFF" d="M3.249,46.271h39.469v3.015H3.249V46.271z"/>
+                    <path fill="#FFFFFF" d="M3.249,40.264h39.469v3.015H3.249V40.264z"/>
+                </svg>
+                <span>오늘 뭐먹지?</span>
+            </div>
+            <noscript>
+              You need to enable JavaScript to run this app.
+            </noscript>
+        </header>
+        <div id="root"></div>
+    </div>
   </body>
 </html>
