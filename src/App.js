@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import Button from './Button';
+import ButtonConfirm from './ButtonConfirm';
 import Display from './Display';
 import './App.css';
 
@@ -11,7 +12,7 @@ class App extends Component {
         super( props );
 
         this.state = {
-            testVal: 'TEST'
+            testVal: '?'
         }
 
     }
@@ -26,15 +27,12 @@ class App extends Component {
 
         return (
             <div className="App">
-                <header className="App-header">
-                    {/* <img src={logo} className="App-logo" alt="logo" /> */}
-                    <h1 className="App-title">오늘점심머꼬?</h1>
-                </header>
-                <p className="App-intro">
+                <div className="App-intro">
                     <Display testVal={ this.state.testVal } />
-                    <br />
-                    <Button setTestVal={ this.setTestVal } />
-                </p>
+                    
+                    <ButtonConfirm />
+					<Button setTestVal={ this.setTestVal } />
+                </div>
             </div>
         );
 

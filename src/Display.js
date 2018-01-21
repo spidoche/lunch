@@ -5,7 +5,10 @@ class Display extends React.Component {
     render() {
 
         return (
-            <span>{ this.props.testVal }</span>
+			<div className="Suggest">
+			<div className="Suggest-thumb"></div>
+			<div className="Suggest-txt">{ this.props.testVal }</div>
+			</div>
         );
 
     }
