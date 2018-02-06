@@ -15,7 +15,7 @@ class Button extends React.Component {
     render() {
 
         return (
-            <button onClick={ this.clickHandler }>인정 아니야</button>
+            <button onClick={ this.clickHandler }>노인정</button>
         );
 
     }
