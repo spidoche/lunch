@@ -4,7 +4,7 @@
 	height:100vh;
 }
 .header-loading{
-    flex: 1 auto;
+    flex: 3;
     width:300px;
     background:var(--color-primary);
 	color:#fff;
@@ -24,6 +24,7 @@
 }
 
 div#root {
+    flex: 1;
     width: calc(100% - 300px);
 }
 
@@ -56,6 +57,7 @@ div#root {
 .App-intro {
   font-size: large;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .Suggest-txt {
@@ -74,6 +76,7 @@ button{
 	font-size:16px;
 	margin:0 4px;
 	display:inline-block;
+	cursor:pointer;
 }
 button:hover{
 	background-color: var(--color-primary);
@@ -107,4 +110,11 @@ button:focus{
 		margin-top: 0;
 	}
 
+}
+
+@media (max-width :360px){
+    button{
+	    width: 140px;
+        height: 48px;
+	}
 }
