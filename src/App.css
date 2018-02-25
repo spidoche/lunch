@@ -4,7 +4,7 @@
 	height:100vh;
 }
 .header-loading{
-    flex: 3;
+    flex: 1 auto;
     width:300px;
     background:var(--color-primary);
 	color:#fff;
@@ -24,7 +24,6 @@
 }
 
 div#root {
-    flex: 1;
     width: calc(100% - 300px);
 }
 
