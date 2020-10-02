@@ -4,7 +4,7 @@ class ButtonConfirm extends React.Component {
 
     clickHandler = () => {
 
-        alert('OK');
+        alert('맛있게 드세요!');
 
     };
 

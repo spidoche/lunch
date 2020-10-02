@@ -30,18 +30,15 @@ class App extends Component {
                 <div className="App-intro">
                     <Display testVal={ this.state.testVal } />
                     
-                    <ButtonConfirm />
-					<Button setTestVal={ this.setTestVal } />
+                    <div className="Action-button">
+                        <ButtonConfirm />
+                        <Button setTestVal={ this.setTestVal } />
+                    </div>
                 </div>
             </div>
         );
 
     }
 }
-
-// Add class on load
-window.addEventListener('load', () => {
-    document.body.classList.add('loaded');
-});
 
 export default App;
