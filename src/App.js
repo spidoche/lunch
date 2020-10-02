@@ -39,4 +39,9 @@ class App extends Component {
     }
 }
 
+// Add class on load
+window.addEventListener('load', () => {
+    document.body.classList.add('loaded');
+});
+
 export default App;
