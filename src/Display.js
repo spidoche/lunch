@@ -6,8 +6,8 @@ class Display extends React.Component {
 
         return (
 			<div className="Suggest">
-			<div className="Suggest-thumb"></div>
-			<div className="Suggest-txt">{ this.props.food }</div>
+			<div className="Suggest-thumb"><img src={`../images/food/${this.props.food.id}.jpg`} alt="" /></div>
+			<div className="Suggest-txt">{ this.props.food.name }</div>
 			</div>
         );
 

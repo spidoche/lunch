@@ -52,7 +52,13 @@ body{ overflow: hidden;}
     height: 100px;
     background: #ddd;
     border-radius: 50%;
-    border: 6px solid var(--color-primary)
+    border: 6px solid var(--color-primary);
+    overflow: hidden;
+}
+.Suggest-thumb img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .App {	  
@@ -171,6 +177,7 @@ button:focus{
     .App-intro{
         padding-top: 190px;
     }
+    
 
 }
 

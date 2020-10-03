@@ -5,7 +5,17 @@ class Button extends React.Component {
     constructor(props){
         super(props);
 
-        this.state = {foodList : [ '김밥', '볶음밥', '만두국', '칼국수', '샌드위치', '샐러드', '라면', '베트남국수', '돈까스', '제육덮밥' ]}
+        this.state = {foodList : [ 
+            {id : 'gimbap',name : '김밥'}, 
+            {id : 'bokkumbap',name : '볶음밥'}, 
+            {id : 'mandukuk',name : '만두국'}, 
+            {id : 'kalkuksu',name : '칼국수'}, 
+            {id : 'sandwitch',name : '샌드위치'}, 
+            {id : 'salad',name : '샐러드'}, 
+            {id : 'ramyeon',name : '라면'}, 
+            {id : 'vietnam',name : '베트남국수'}, 
+            {id : 'donkasu',name : '돈까스'}, 
+            {id : 'jaeyukbap',name : '제육덮밥'} ]}
     }
     
     clickHandler = () => {

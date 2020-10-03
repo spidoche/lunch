@@ -12,7 +12,7 @@ class App extends Component {
         super( props );
 
         this.state = {
-            food: '돈까스'
+            food: {id:'donkasu',name:'돈까스'}
         }
 
     }
