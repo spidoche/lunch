@@ -7,7 +7,7 @@ class Display extends React.Component {
         return (
 			<div className="Suggest">
 			<div className="Suggest-thumb"></div>
-			<div className="Suggest-txt">{ this.props.testVal }</div>
+			<div className="Suggest-txt">{ this.props.food }</div>
 			</div>
         );
 

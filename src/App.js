@@ -12,14 +12,14 @@ class App extends Component {
         super( props );
 
         this.state = {
-            testVal: '돈까스'
+            food: '돈까스'
         }
 
     }
 
-    setTestVal = ( value ) => {
+    setFood = ( value ) => {
 
-        this.setState( { testVal: value } );
+        this.setState( { food: value } );
 
     };
 
@@ -28,11 +28,11 @@ class App extends Component {
         return (
             <div className="App">
                 <div className="App-intro">
-                    <Display testVal={ this.state.testVal } />
+                    <Display food={ this.state.food } />
                     
                     <div className="Action-button">
                         <ButtonConfirm />
-                        <Button setTestVal={ this.setTestVal } />
+                        <Button setFood={ this.setFood } />
                     </div>
                 </div>
             </div>
